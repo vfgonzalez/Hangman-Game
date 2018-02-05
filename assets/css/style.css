@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(52, 52, 52);
+}
+
+#banner{
+    height:250px;
+    width:auto;
+}
+.jumbotron{
+    background-color: rgb(52, 52, 52);
+    text-align: center;
+    color: rgb(197, 22, 22);
+}
+.container{
+    margin:auto;
+    text-align: center;
+}
+.textdisplay{
+    color: aliceblue;
+    float:right;
+}
+#Guessmade{
+    font-size: 40px;
+}
