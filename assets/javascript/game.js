@@ -9,12 +9,12 @@ var artistList = ["jayz","tupac","biggie","nas","mosdef","common","kanye","drake
     function reset(){
         guessesleft = 12
         lettersguessed=[]
-        randomArtist =  artistList[Math.floor(Math.random()*(artistList.length-1))]
         blanks =""
         blankreset()
         
     }
     var blankreset = function(){
+        randomArtist =  artistList[Math.floor(Math.random()*(artistList.length-1))]
             for (var i=0; i < randomArtist.length;i++){
                 var blanks = $("<span>")
                 blanks.attr("class","underscores")
