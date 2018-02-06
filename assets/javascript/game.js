@@ -56,8 +56,7 @@ var artistList = ["jayz","tupac","biggie","nas","mosdef","common","kanye","drake
        }
     else if(userguess !== randomArtist.includes(userguess)){
         guessesleft--
-        letterguessed.splice(0,0,userguess)
-        console.log("no match")
+        lettersguessed.splice(0,0,userguess)
     }
 
     else{
