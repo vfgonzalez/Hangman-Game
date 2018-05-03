@@ -9,25 +9,24 @@ var artistList = ["jayz","tupac","biggie","nas","mosdef","common","kanye","drake
     function reset(){
         guessesleft = 12
         lettersguessed=[]
-        blanks =""
         blankreset()
         
     }
     var blankreset = function(){
-        randomArtist =  artistList[Math.floor(Math.random()*(artistList.length-1))]
-            for (var i=0; i < randomArtist.length;i++){
-                var blanks = $("<span>")
-                blanks.attr("class","underscores")
-                blanks.attr("fillerspots",randomArtist[i])
-                blanks.text(randomArtist[i])
-                $(".spacereplace").append(("_ "))
-                console.log("**" + blanks)
-            }
+        for (var i=0; i < randomArtist.length;i++){
+            var blanks = $("<span>")
+            blanks.attr("class","underscores")
+            blanks.attr("fillerspots",randomArtist[i])
+            blanks.text(randomArtist[i])
+            $(".spacereplace").append(("_ "))
+            console.log("**" + blanks)
+        }
         }
 
     
     $( ".btn" ).click(function() {
         reset();
+        blankreset();
       });
     
     $(document).ready()
